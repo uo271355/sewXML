@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rutas [
+<!ELEMENT rutas (ruta+)>
+<!ELEMENT ruta (tipo,dificultad,fechaInicio?,horaInicio?,duracion,agencia,descripcion,personasaptas,lugarInicio,direccionInicio,coordenadasInicio,referencias,recomendacion,hitos+)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT dificultad (#PCDATA)>
+<!ELEMENT fechaInicio (#PCDATA)>
+<!ELEMENT horaInicio (#PCDATA)>
+<!ELEMENT duracion (#PCDATA)>
+<!ELEMENT agencia (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT personasaptas (#PCDATA)>
+<!ELEMENT lugarInicio (#PCDATA)>
+<!ELEMENT direccionInicio (#PCDATA)>
+<!ELEMENT coordenadasInicio (longitud,latitud,altitud)>
+<!ELEMENT longitud (#PCDATA)>
+<!ELEMENT latitud (#PCDATA)>
+<!ELEMENT altitud (#PCDATA)>
+<!ELEMENT referencias (enlace+)>
+<!ELEMENT enlace (#PCDATA)>
+<!ELEMENT recomendacion (#PCDATA)>
+<!ELEMENT hitos (hito+)>
+<!ELEMENT hito (nombreHito,descripcionHito, coordenadaHito,distanciaHitoAnterior,tiempoHitoAnterior?,galeriaFotos,galeriaVideos?)>
+<!ELEMENT nombreHito (#PCDATA)>
+<!ELEMENT descripcionHito (#PCDATA)>
+<!ELEMENT coordenadaHito (longitudHito,latitudHito,altitudHito)>
+<!ELEMENT longitudHito (#PCDATA)>
+<!ELEMENT latitudHito (#PCDATA)>
+<!ELEMENT altitudHito (#PCDATA)>
+<!ELEMENT distanciaHitoAnterior (#PCDATA)>
+<!ELEMENT tiempoHitoAnterior (#PCDATA)>
+<!ELEMENT galeriaFotos (foto+)>
+<!ELEMENT foto (#PCDATA)>
+<!ELEMENT galeriaVideos (video*)>
+<!ELEMENT video (#PCDATA)>
+<!ATTLIST ruta 
+			nombre CDATA #REQUIRED>
+<!ATTLIST altitud
+			unidades CDATA #REQUIRED>
+<!ATTLIST altitudHito
+			unidades CDATA #REQUIRED>
+<!ATTLIST distanciaHitoAnterior
+			unidades CDATA #REQUIRED>
+]>
+<rutas>
+<ruta nombre="Madrid - Dublín">
+<tipo>Internacional</tipo>
+<dificultad>Facil</dificultad>
+
+<fechaInicio>Lunes 9 de Noviembre de 2020</fechaInicio>
+<horaInicio>14:20</horaInicio>
+<duracion>PT2H45M</duracion>
+
+<agencia>Sin agencia</agencia>
+<descripcion>Vuelo corto, dentro de la unión europea. No necesita el pasaporte apra realizarlo, con el DNI le es suficiente.</descripcion>
+<personasaptas>Adecuada para todo tipo de personas</personasaptas>
+
+<lugarInicio>Adolfo Suárez Madrid-Barajas</lugarInicio>
+<direccionInicio>Av de la Hispanidad, s/n, 28042 Madrid</direccionInicio>
+
+<coordenadasInicio>
+	<longitud>O3°34'10.13"</longitud>
+	<latitud>N40°29'30.52"</latitud>
+	<altitud unidades="metros">610</altitud>
+</coordenadasInicio>
+
+<referencias>
+	<enlace>http://aena.mobi/m/es/aeropuerto-madrid-barajas/index.html</enlace>
+	<enlace>https://www.dublin.es/aeropuerto-dublin</enlace>
+	<enlace>https://www.viajeroscallejeros.com/lugares-que-visitar-dublin/</enlace>
+</referencias>
+
+<recomendacion>7</recomendacion>
+
+<hitos>
+	<hito>
+		<nombreHito>Valladolid</nombreHito>
+		<descripcionHito>Es un municipio y ciudad española situada en el cuadrante noroeste de la península ibérica, capital de la provincia 
+		de Valladolid y sede de las Cortes y el Gobierno autonómicos de Castilla y León.</descripcionHito>
+		<coordenadaHito>
+			<longitudHito>O4°43'25.39"</longitudHito>
+			<latitudHito>N41°39'18.65"</latitudHito>
+			<altitudHito unidades="metros">701</altitudHito>
+		</coordenadaHito>
+		<distanciaHitoAnterior unidades="km">212</distanciaHitoAnterior>
+		<tiempoHitoAnterior>12 minutos</tiempoHitoAnterior>
+		<galeriaFotos>
+			<foto>valladolid.png</foto>
+			<foto>valladolid1.png</foto>
+			<foto>valladolid2.png</foto>
+			<!--maximo 5-->
+		</galeriaFotos>
+		<galeriaVideos>
+		</galeriaVideos>
+	</hito>
+	
+	<hito>
+		<nombreHito>Oviedo</nombreHito>
+		<descripcionHito>Es un concejo y ciudad española, capital del Principado de Asturias. ​ Su origen se remonta a la Alta Edad Media 
+		—siglo VIII—, o incluso a antes, denominada en origen Ovetum.</descripcionHito>
+		<coordenadaHito>
+			<longitudHito>O5°50'41.14"</longitudHito>
+			<latitudHito>N43°21'37.04"</latitudHito>
+			<altitudHito unidades="msnm">231​</altitudHito>
+		</coordenadaHito>
+		<distanciaHitoAnterior unidades="km">256</distanciaHitoAnterior>
+		<galeriaFotos>
+			<foto>oviedo.png</foto>
+			<foto>oviedo1.png</foto>
+			<!--maximo 5-->
+		</galeriaFotos>
+		<galeriaVideos>
+		</galeriaVideos>
+	</hito>
+	
+	<hito>
+		<nombreHito>Waterford</nombreHito>
+		<descripcionHito>fue la primera ciudad de Irlanda fundada por los vikingos en 914.
+		En la actualidad, Waterford es la quinta ciudad de la República de Irlanda, con una población de 51.519 habitantes</descripcionHito>
+		<coordenadaHito>
+			<longitudHito>52°15'30''</longitudHito>
+			<latitudHito>N 7°6.716' O</latitudHito>
+			<altitudHito unidades="metros">372</altitudHito>
+		</coordenadaHito>
+		<distanciaHitoAnterior unidades="km">1880</distanciaHitoAnterior>
+		<tiempoHitoAnterior>2 h 8 min</tiempoHitoAnterior>
+		<galeriaFotos>
+			<foto>waterford.png</foto>
+			<foto>waterford1.png</foto>
+			<foto>waterford2.png</foto>
+			<!--maximo 5-->
+		</galeriaFotos>
+		<galeriaVideos>
+			<video>https://www.youtube.com/watch?v=4YIuCtR9Jak</video>
+			<!--minimo 0, maximo 3. Son enlaces -->
+		</galeriaVideos>
+	</hito>
+</hitos>
+</ruta>
+
+<ruta nombre="Ginebra - Los Angeles">
+<tipo>Intercontinental</tipo>
+<dificultad>Dificil</dificultad>
+
+<horaInicio>10:50</horaInicio>
+<duracion>PT19H15M</duracion>
+
+<agencia>Halcón viajes</agencia>
+<descripcion>Vuelo largo, transoceanico. Viaje a fuera de la unión europea por lo que se requiere pasaporte.</descripcion>
+<personasaptas>No recomendadas a personas mayores o con algun tipo de enfermedad (virica, claustrofobia... )</personasaptas>
+
+<lugarInicio>Aeropuerto Internacional de Ginebra</lugarInicio>
+<direccionInicio>Route de l'Aéroport 21, 1215 Le Grand-Saconnex, Suiza</direccionInicio>
+
+<coordenadasInicio>
+	<longitud>6°08′44″ E</longitud>
+	<latitud>46°12′07″ N</latitud>
+	<altitud unidades="metros">417.82</altitud>
+</coordenadasInicio>
+
+<referencias>
+	<enlace>https://www.aeropuertoinfo.com/aeropuertos/ginebra-airport/</enlace>
+	<enlace>https://www.turama.es/aeropuerto-de-los-angeles-lax-guia-para-no-perderte</enlace>
+	<enlace>https://www.viajarlosangeles.com/que-visitar-los-angeles.php</enlace>
+	<enlace>https://www.viajarlosangeles.com/itinerario-3-dias-los-angeles.php</enlace>
+</referencias>
+
+<recomendacion>9</recomendacion>
+
+<hitos>
+	<hito>
+		<nombreHito>Nantes</nombreHito>
+		<descripcionHito>Es una de las ciudades más importantes de Francia, capital del departamento de Loira Atlántico y de la 
+		región Países del Loira. Cuenta con una población de 282.047 habitantes y se ubica en el noroeste del país.</descripcionHito>
+		<coordenadaHito>
+			<longitudHito>O1°33'12.1"</longitudHito>
+			<latitudHito> N47°13'2.1"</latitudHito>
+			<altitudHito unidades="metros">27</altitudHito>
+		</coordenadaHito>
+		<distanciaHitoAnterior unidades="km">841</distanciaHitoAnterior>
+		<tiempoHitoAnterior>1h 30 min</tiempoHitoAnterior>
+		<galeriaFotos>
+			<foto>nantes1.png</foto>
+			<foto>nantes2.png</foto>
+			<foto>nantes.png</foto>
+			<!--maximo 5-->
+		</galeriaFotos>
+		<galeriaVideos>
+			<video>https://www.youtube.com/watch?v=b_2JDXKyOKQ</video>
+			<!--minimo 0, maximo 3. Son enlaces -->
+		</galeriaVideos>
+	</hito>
+	
+	<hito>
+		<nombreHito>Nueva York</nombreHito>
+		<descripcionHito>Considerada la ciudad más importante del mundo a nivel económico y cultural, Nueva York se ubica en el 
+		estado homónimo de Estados Unidos aunque no es su capital a pesar de poseer la población más numerosa no sólo de ese 
+		estado si no del país entero.</descripcionHito>
+		<coordenadaHito>
+			<longitudHito>74°0.358' O</longitudHito>
+			<latitudHito>40°42.856' N</latitudHito>
+			<altitudHito unidades="metros">25​</altitudHito>
+		</coordenadaHito>
+		<distanciaHitoAnterior unidades="km">5612 </distanciaHitoAnterior>
+		<galeriaFotos>
+			<foto>ny.png</foto>
+			<foto>ny1.png</foto>
+			<foto>ny2.png</foto>
+			<foto>ny3.png</foto>
+			<!--maximo 5-->
+		</galeriaFotos>
+		<galeriaVideos>
+			<video>https://www.youtube.com/watch?v=8ee2Q7nTb6M</video>
+			<!--minimo 0, maximo 3. Son enlaces -->
+		</galeriaVideos>
+	</hito>
+	
+	<hito>
+		<nombreHito>Denver</nombreHito>
+		<descripcionHito>Es la capital y la ciudad más grande del estado de Colorado en Estados Unidos. Dénver es una ciudad-condado 
+		consolidada situada en el valle del río Platte Sur en High Plains, al este de la Cordillera Front en las Montañas Rocosas.</descripcionHito>
+		<coordenadaHito>
+			<longitudHito>O104°59'4.92"</longitudHito>
+			<latitudHito>N39°44'20.94"</latitudHito>
+			<altitudHito unidades="metros">1609</altitudHito>
+		</coordenadaHito>
+		<distanciaHitoAnterior unidades="km">2883</distanciaHitoAnterior>
+		<tiempoHitoAnterior>4 h 5 min</tiempoHitoAnterior>
+		<galeriaFotos>
+			<foto>denver.png</foto>
+			<!--maximo 5-->
+		</galeriaFotos>
+		<galeriaVideos>
+		</galeriaVideos>
+	</hito>
+	
+	<hito>
+	<nombreHito>Las Vegas</nombreHito>
+	<descripcionHito>Es la ciudad más grande del estado de Nevada, en Estados Unidos. Es uno de los principales destinos turísticos 
+	del país gracias a sus zonas comerciales y vacacionales, pero sobre todo gracias a sus casinos.</descripcionHito>
+	<coordenadaHito>
+		<longitudHito>115°8.233' O</longitudHito>
+		<latitudHito>36°10.498' N</latitudHito>
+		<altitudHito unidades="metros">719</altitudHito>
+	</coordenadaHito>
+	<distanciaHitoAnterior unidades="km">1120</distanciaHitoAnterior>
+	<tiempoHitoAnterior>1 h 45 min</tiempoHitoAnterior>
+	<galeriaFotos>
+		<foto>vegas.png</foto>
+		<foto>vegas1.png</foto>
+		<foto>vegas2.png</foto>
+		<foto>vegas3.png</foto>
+		<foto>vegas4.png</foto>
+		<!--maximo 5-->
+	</galeriaFotos>
+	<galeriaVideos>
+		<video>https://www.youtube.com/watch?v=zmrsXIrkGG0</video>
+		<video>https://www.youtube.com/watch?v=uG1qZlEtorM</video>
+		<!--minimo 0, maximo 3. Son enlaces -->
+	</galeriaVideos>
+	</hito>
+</hitos>
+</ruta>
+
+<ruta nombre="Bilbao - Alicante">
+<tipo>Nacional</tipo>
+<dificultad>Intermedio</dificultad>
+
+<fechaInicio>Sabado 14 de Noviembre de 2020</fechaInicio>
+<duracion>PT1H20M</duracion>
+
+<agencia>Sin Agencia</agencia>
+<descripcion>Vuelo muy corto, para viajar nacionalmente dentro del país.</descripcion>
+<personasaptas>Apto para todo tipo de personas</personasaptas>
+
+<lugarInicio>Aeropuerto de Bilbao</lugarInicio>
+<direccionInicio>48180 Loiu, BI</direccionInicio>
+
+<coordenadasInicio>
+	<longitud>O2°54'38.2"</longitud>
+	<latitud>N43°18'3.96"</latitud>
+	<altitud unidades="metros">42</altitud>
+</coordenadasInicio>
+
+<referencias>
+	<enlace>http://aena.mobi/m/es/aeropuerto-bilbao/bilbao.html</enlace>
+	<enlace>http://aena.mobi/m/es/aeropuerto-alicante/alicante-elche.html</enlace>
+	<enlace>https://www.tripadvisor.es/Attractions-g1064230-Activities-Alicante_Costa_Blanca_Province_of_Alicante_Valencian_Country.html</enlace>
+	<enlace>https://viajes.nationalgeographic.com.es/a/mejores-playas-alicante_15663</enlace>
+</referencias>
+
+<recomendacion>5</recomendacion>
+
+<hitos>
+	<hito>
+		<nombreHito>Logroño</nombreHito>
+		<descripcionHito>Es una ciudad y municipio situado en el norte de España, capital de la comunidad autónoma de La Rioja.</descripcionHito>
+		<coordenadaHito>
+			<longitudHito>2º 26' 20,4" O</longitudHito>
+			<latitudHito> 42º 27' 56,6" N</latitudHito>
+			<altitudHito unidades="metros">384</altitudHito>
+		</coordenadaHito>
+		<distanciaHitoAnterior unidades="km">136</distanciaHitoAnterior>
+		<galeriaFotos>
+			<foto>logroño.png</foto>
+			<!--maximo 5-->
+		</galeriaFotos>
+		<galeriaVideos>
+		</galeriaVideos>
+	</hito>
+	
+	<hito>
+		<nombreHito>Zaragoza</nombreHito>
+		<descripcionHito>Considerada la ciudad más importante del mundo a nivel económico y cultural, Nueva York se ubica en el 
+		estado homónimo de Estados Unidos aunque no es su capital a pesar de poseer la población más numerosa no sólo de ese 
+		estado si no del país entero.</descripcionHito>
+		<coordenadaHito>
+			<longitudHito>0°52.64' O</longitudHito>
+			<latitudHito>41°39.364' N</latitudHito>
+			<altitudHito unidades="msnm">208​</altitudHito>
+		</coordenadaHito>
+		<distanciaHitoAnterior unidades="km">170 </distanciaHitoAnterior>
+		<tiempoHitoAnterior>30 min</tiempoHitoAnterior>
+		<galeriaFotos>
+			<foto>z.png</foto>
+			<foto>z1.png</foto>
+			<foto>z2.png</foto>
+			<!--maximo 5-->
+		</galeriaFotos>
+		<galeriaVideos>
+			<video>https://www.youtube.com/watch?v=rTMVi5jtgXY</video>
+			<!--minimo 0, maximo 3. Son enlaces -->
+		</galeriaVideos>
+	</hito>
+	
+	<hito>
+		<nombreHito>Valencia</nombreHito>
+		<descripcionHito>"La ciudad luminosa" Valencia, la tierra de flores y fallas , es una de las ciudades más grandes e importantes de España, 
+		y una de las más vivas.</descripcionHito>
+		<coordenadaHito>
+			<longitudHito>O0°22'38.6"</longitudHito>
+			<latitudHito>N39°28'11.1"</latitudHito>
+			<altitudHito unidades="msnm">16​</altitudHito>
+		</coordenadaHito>
+		<distanciaHitoAnterior unidades="km">308,6</distanciaHitoAnterior>
+		<galeriaFotos>
+			<foto>calencia.png</foto>
+			<foto>valencia1.png</foto>
+			<foto>valencia2.png</foto>
+			<foto>valencia3.png</foto>
+			<!--maximo 5-->
+		</galeriaFotos>
+		<galeriaVideos>
+			<video>https://www.youtube.com/watch?v=NmsFT_OdDlU</video>
+			<video>https://www.youtube.com/watch?v=Dm78oEz-27c</video>
+			<video>https://www.youtube.com/watch?v=Av0KvwTVVVk</video>
+			<!--minimo 0, maximo 3. Son enlaces -->
+		</galeriaVideos>
+	</hito>
+</hitos>
+</ruta>
+
+</rutas>
